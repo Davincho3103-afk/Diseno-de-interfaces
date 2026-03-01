@@ -1,8 +1,3 @@
----
-layout: default
-title: Guia 3. Arquitectura de la información. Iniciación proyecto de clase
----
-
 SaliAmigos
 
 David Alejandro Bonilla Mahecha
