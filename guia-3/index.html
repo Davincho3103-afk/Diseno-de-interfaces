@@ -1,30 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Guía 3</title>
-    <link rel="stylesheet" href="../styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía 3 - SaliAmigos</title>
+<link rel="stylesheet" href="../../styles.css">
+
+<style>
+.contenedor {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    color: #3b82f6;
+}
+
+.card-seccion {
+    background: #1e293b;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3b82f6;
+    text-decoration: none;
+}
+</style>
+
 </head>
 <body>
 
-<header>
-    <h1>Guía 3</h1>
-    <p>Análisis y diseño</p>
-</header>
+<div class="contenedor">
 
-<main style="padding:40px;">
+<a href="../../index.html" class="volver">⬅ Volver al inicio</a>
 
-    <h2>Imagen del prototipo</h2>
-    <img src="Imagen-figma-v1.png" width="500">
+<h1>📱 SaliAmigos</h1>
 
-    <a href="etapa1-analisis.md" target="_blank">
-    Ver análisis completo
-    </a>
+<p><strong>Integrantes:</strong><br>
+David Alejandro Bonilla Mahecha<br>
+William David Vivas Maldonado
+</p>
 
-    <br><br>
-    <a href="../">⬅ Volver al inicio</a>
+<div class="card-seccion">
+<h2>📌 Problemática</h2>
+<p>
+Cuando un grupo de amigos intenta organizar una salida, suelen presentarse varios problemas:
+</p>
 
-</main>
+<ul>
+<li>Dificultad para coincidir fechas.</li>
+<li>Desacuerdos sobre cuánto debe pagar cada persona.</li>
+<li>Falta de claridad sobre quién ya pagó y quién no.</li>
+<li>Desorden en los mensajes de WhatsApp.</li>
+<li>No existe una herramienta sencilla enfocada exclusivamente en organizar salidas y dividir gastos automáticamente.</li>
+</ul>
+
+<p>
+El proyecto busca resolver estos problemas mediante una aplicación que permita planificar eventos y calcular automáticamente la división de gastos según lo planeado.
+</p>
+</div>
+
+<div class="card-seccion">
+<h2>🎯 Público Objetivo</h2>
+<ul>
+<li>Grupos de amigos.</li>
+<li>Estudiantes universitarios.</li>
+<li>Personas que organizan viajes o eventos pequeños.</li>
+<li>Equipos de trabajo que realizan actividades sociales.</li>
+</ul>
+</div>
+
+<div class="card-seccion">
+<h2>👤 Tipos de Usuario</h2>
+<ul>
+<li><strong>Usuario creador:</strong> Puede crear grupos y eventos.</li>
+<li><strong>Usuario participante:</strong> Puede unirse a eventos y registrar pagos.</li>
+<li><strong>Administrador del grupo:</strong> Puede modificar gastos y confirmar pagos.</li>
+</ul>
+</div>
+
+<div class="card-seccion">
+<h2>🔄 Entrada, Proceso y Salida del Sistema</h2>
+
+<h3>Entrada</h3>
+<ul>
+<li>Datos de registro (nombre, correo, contraseña).</li>
+<li>Creación de grupo (nombre, integrantes).</li>
+<li>Creación de salida (fecha, descripción, presupuesto).</li>
+<li>Registro de gastos (quién pagó, cuánto, concepto).</li>
+<li>Confirmación de pagos.</li>
+</ul>
+
+<h3>Proceso</h3>
+<p>El sistema realiza:</p>
+<ul>
+<li>Almacenamiento de datos en base de datos.</li>
+<li>Cálculo automático del gasto total.</li>
+<li>División equitativa del gasto entre participantes.</li>
+<li>Cálculo de balances individuales.</li>
+<li>Actualización del estado de pagos (pendiente / pagado).</li>
+</ul>
+
+<p><strong>Ejemplo:</strong><br>
+Si se registra un gasto de $200.000 y hay 5 participantes, el sistema divide automáticamente $40.000 por persona.  
+Si una persona pagó $120.000, el sistema calcula que le deben $80.000.
+</p>
+
+<h3>Salida</h3>
+<ul>
+<li>Calendario con salidas programadas.</li>
+<li>Resumen total de gastos por evento.</li>
+<li>Detalle de cuánto debe cada persona.</li>
+<li>Estado de pagos.</li>
+<li>Historial de eventos anteriores.</li>
+</ul>
+</div>
+
+<div class="card-seccion">
+<h2>📌 Alcance del Sistema</h2>
+<ul>
+<li>Crear y administrar grupos.</li>
+<li>Programar salidas con fecha.</li>
+<li>Registrar y dividir gastos automáticamente.</li>
+<li>Visualizar balances individuales.</li>
+<li>Confirmar pagos realizados.</li>
+</ul>
+</div>
+
+</div>
 
 </body>
 </html>
