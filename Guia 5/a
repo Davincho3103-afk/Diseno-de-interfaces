@@ -1,1 +1,71 @@
+1. MOODBOARD: Concepto "Navegación Social"
+El Moodboard debe transmitir confianza, frescura y organización.
+
+Palabras Clave: Colaboración, Fluidez, Transparencia financiera, Amistad, Navegación.
+
+Colores: * Azul Cielo: Calma y entorno digital (Background actual).
+
+Verde Lima: Acción, confirmación y "visto bueno" (Botones principales).
+
+Coral/Rojo: Alertas o acciones secundarias de salida.
+
+Texturas: Superficies limpias (Glassmorphism sutil), sombras suaves (Drop Shadows) para generar profundidad en las tarjetas.
+
+Estructuras: Card-based design (diseño basado en tarjetas) con bordes muy redondeados (aprox. 20-24px) para un look moderno y amigable.
+
+Referencias Visuales: Apps como Splitwise (funcionalidad), Airbnb (limpieza visual) y Lemon Cash (estética de tarjetas y colores vibrantes).
+
+2. UI KIT (Sistema de Diseño)
+Elementos Tipográficos
+Usar una fuente Sans Serif moderna (ej. Inter o Roboto).
+
+Título H1: Bold, 24px (Ej: "SailAmigos", "Mis Grupos").
+
+Título H2: Semibold, 20px (Ej: "Eventos recientes").
+
+Subtítulo: Medium, 16px (Ej: "Gestiona tus salidas...").
+
+Párrafo P1: Regular, 14px (Ej: Nombres de miembros).
+
+Párrafo P2 (Small): Regular, 12px (Ej: Fechas, "3 participantes").
+
+Botón: Bold, 16px, All Caps o Sentence case.
+
+Código Cromático
+Tipo	Color Hex (Sugerido)	Uso
+Primario	#4CAF50 (Verde)	Botones de acción positiva (Crear, Iniciar).
+Secundario	#2196F3 (Azul)	Acciones de visualización (Ver grupos).
+Acento	#FF5252 (Coral)	Registro, Cerrar sesión o eliminación.
+Fondo	#E0F2F7 (Celeste claro)	Fondo general de la app.
+Iconografía (Estados)
+Activo: Icono con color de acento (Verde/Azul) y relleno (Solid).
+
+Desactivado: Icono en gris (#BDBDBD) y solo contorno (Outline).
+
+Componentes: Tarjetas y Botones
+Tarjetas Principales: Ancho total de la grilla, fondo blanco, 15px de padding, shadow suave.
+
+Tarjetas Secundarias: (Para miembros o gastos individuales) 50% del ancho del módulo.
+
+Botón Flotante (FAB): Círculo verde con icono + blanco, ubicado en la esquina inferior derecha (como se ve en "Mis Grupos").
+
+Inputs: Bordes grises claros, radio de 10px, texto de placeholder en gris suave.
+
+3. MICROINTERACCIONES Y ANIMACIÓN
+Para elevar la fidelidad a Alta, aplica estos principios de Motion:
+
+Feedback de Botón (Squash & Stretch): Al presionar "Iniciar Sesión", el botón debe reducirse ligeramente de tamaño (95%) y volver al 100% al soltar, confirmando el clic.
+
+Entrada Escalonada (Staggering): Al entrar a "Mis Grupos", las tarjetas no aparecen de golpe; suben una por una con un ligero retraso de 0.1s entre ellas.
+
+Transición de Estado (Shared Element): Al tocar la tarjeta "Cena restaurante" en el Inicio, esta se expande de forma fluida hasta convertirse en la cabecera de la pantalla de detalle del evento.
+
+Validación de Formulario: Si el campo de correo está vacío, el borde del input debe parpadear en rojo (Shake animation) para orientar al usuario.
+
+Carga (Skeleton Screen): Mientras los grupos se sincronizan, mostrar siluetas grises animadas en lugar de un círculo de carga aburrido.
+
+4. FIDELIDAD DEL PROTOTIPO
+Contenido Real: Evita el "asd" o "asdd". Cambia esos nombres por "Juan Pérez", "María García". En "Total a dividir", usa cifras que tengan sentido para el contexto (ej. $150.000 para una cena).
+
+Flujo Completo: Asegúrate de que el botón de "Atrás" (<) en la pantalla de "Crear Grupo" funcione y devuelva al usuario a la lista anterior.
 
